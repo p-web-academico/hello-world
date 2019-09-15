@@ -95,10 +95,10 @@ z-index: 999;
   background: #49505F;
 }
 .header-content  h1 {
-  color: #fff;
+  color: white;
   font-size: 70px;
   text-transform: uppercase;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px white;
 }
 .header-content h4 {
   color: #fff;
@@ -393,16 +393,16 @@ input {
 /*************navigation******************/
 
  .navbar-inverse {
-    background-color: #383E4C;
-    border-color: #383E4C;
+    background-color: black;
+    border-color: #398af3;
 }
 .navbar-nav>li {
     display: inline-block;
     padding: 10px;
 }
 .navbar-inverse .navbar-nav>li>a {
-    background: #383E4C none repeat scroll 0 0;
-    border: 1px solid #646d7c;
+    background: black none repeat scroll 0 0;
+    border: 1px solid #398af3;
     color: #fff ;
     font-size: 20px;
     padding: 15px 25px;
@@ -414,7 +414,7 @@ input {
 
 .navbar-inverse .navbar-nav > li > a.current,
 .navbar-inverse .navbar-nav > li > a:hover {
-        background: #49505F;
+        background: black
 }
 .navbar .navbar-nav {
     display: inline-block;
