@@ -192,7 +192,7 @@ div#service-area-main {
 .service  h1 {
   color: #fff;
   text-transform: capitalize;
-  text-shadow: 2px 2px #aaa;
+  text-shadow: none;
   margin-bottom: 20px;
 }
 .service > p {
@@ -224,10 +224,10 @@ h2 {
     text-align: left;
 }
 .content-link {
-    background: #fff none repeat scroll 0 0;
-    border: 1px solid #cdcdcd;
+    background: white;
+    border: none;
     border-radius: 10px;
-    color: #666;
+    color: black;
     display: inline-block;
     font-size: 18px;
     padding: 10px 30px;
@@ -388,15 +388,14 @@ hr {
 
  .navbar-inverse {
     background-color: white;
-    border-color: white
+    border-color: white;
 }
 .navbar-nav>li {
     display: inline-block;
     padding: 10px;
 }
 .navbar-inverse .navbar-nav>li>a {
-    background: white none repeat scroll 0 0;
-    
+    background: white;
     color: black ;
     font-size: 20px;
     padding: 15px 25px;
@@ -406,10 +405,13 @@ hr {
             transition: all 0.3s ease;
 }
 
-.navbar-inverse .navbar-nav > li > a.current,
+.navbar-inverse .navbar-nav > li > a.current {
+  background: rgb(255, 131, 72);
+  color: white;
+}
 .navbar-inverse .navbar-nav > li > a:hover {
-        background: #910505;
-        color: white
+        background: rgb(255, 131, 72);
+        color: white;
 }
 .navbar .navbar-nav {
     display: inline-block;
