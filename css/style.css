@@ -102,6 +102,7 @@ z-index: 999;
 .blue-btn:hover { background: #31B0D5; }
 .red-btn { background: #852406; }
 .red-btn:hover { background: #C9302C; }
+.btn-default:hover { background: #ff8348; }
 .feature-content {
     background: #F2F2F2;
     padding-bottom: 40px;
@@ -406,11 +407,11 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > li > a.current {
-  background: rgb(255, 131, 72);
+  background: #ff8348;
   color: white;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-        background: rgb(255, 131, 72);
+        background: #ff8348;
         color: white;
 }
 .navbar .navbar-nav {
