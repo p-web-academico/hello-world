@@ -1,18 +1,14 @@
 <?php
-
-$nome = addslashes($_POST['name']);
-$email = addslashes($_POST['email']);
-$assunto = addslashes($_POST['subject']);
-$mensagem = addslashes($_POST['message']);
-
-$to = "p.web.academico@gmail.com";
-$subject = "Formulario - P.WEB";
-$body = "Nome: ".$nome. "\r\n".
-        "Email: ".$email."\r\n".
-        "Assunto: ".$assunto."\r\n".
-        "Mensagem: ".$mensagem;
-$header = "From:p.web.academico@gmail.com"."\r\n".
-            "Reply-To:".$email."\r\n".
-            "X=Mailer:PHP/".phpversion();
-
+// O remetente deve ser um e-mail do seu domínio conforme determina a RFC 822.
+// O return-path deve ser ser o mesmo e-mail do remetente.
+$headers = "MIME-Version: 1.1\r\n";
+$headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+$headers .= "From: p.web.academico@gmail.com\r\n"; // remetente
+$headers .= "Return-Path: eu@seudominio.com\r\n"; // return-path
+$envio = mail("destinatario@algum-email.com", "Assunto", "Texto", $headers);
+ 
+if($envio)
+ echo "Mensagem enviada com sucesso";
+else
+ echo "A mensagem não pode ser enviada";
 ?>
